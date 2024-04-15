@@ -1,0 +1,111 @@
+.search {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.search .input-group {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.search .input-group .prepend {
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background-color: #FFFFFF;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  color: #5E5E5E;
+}
+
+.search .input-group .append {
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background-color: #FFFFFF;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  color: #5E5E5E;
+}
+
+.search input {
+  padding: 10px;
+  width: 100%;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-left: 0;
+  border-right: 0;
+  font-size: 1em;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search .results {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.search .results .data {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.search .results .row {
+  display: flex;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.search .results .header.row {
+  font-weight: 600;
+  color: #5E5E5E;
+  font-size: 0.9em;
+}
+
+.search .results .data .name.col {
+  width: 50%;
+}
+
+.search .results .data .ticker.col {
+  width: 25%;
+}
+
+.search .results .data .exchange.col {
+  width: 25%;
+}
+
+.search .results .data::-webkit-scrollbar {
+  width: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Track */
+.search .results .data::-webkit-scrollbar-track {
+  background: #F1F1F1; 
+}
+ 
+/* Handle */
+.search .results .data::-webkit-scrollbar-thumb {
+  background: #C4C4C4; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.search .results .data::-webkit-scrollbar-thumb:hover {
+  background: #C4C4C4; 
+}
