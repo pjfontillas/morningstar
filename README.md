@@ -64,7 +64,23 @@ Module will:
 This can be done with vanilla JS. There are many frameworks (like React) that provide a method to do this for you but I wanted to showcase that I understand and can implement the underlying behavior and create our own custom modules when needed. The design principles used to create this module can be followed and reproduced in other frameworks.
 
 ### Debouncing
-While not in the requirements I expect user input to be debounced so every keystroke does not trigger an HTTP request to the API. JS `setTimeout` and a `.val()` check will suffice.
+While not in the requirements I expect user input to be debounced so every keystroke does not trigger an HTTP request to the API. JS `setTimeout` and a `.value` check will suffice.
 
 ### Git Branching
 Branch name assumes project name similar to `Morningstar Interview`, with my task being the first (1) created; resulting in `mi-1`.
+
+### Security
+Even though in this exercise we control the API, we should still clean response data that are output to the page.
+
+## Running
+This exercise is a simple `index.html` file that you can click to open as a local file or serve via HTTPS any way you want. I prefer using `npx http-server -S -C cert.pem -o`, but you will need to generate your own `cert.pem` and `key.pem`. See [StackOverflow](https://stackoverflow.com/questions/12871565/how-to-create-pem-files-for-https-web-server) for examples.
+
+## Testing
+Selenium, Mocha, and Chai are used to test this module. Run `mocha ./lib/Search/test.js` while in the project directory for the test specific to this module.
+chromedriver.exe that matches your Chrome build version should be either in your path or project directory. chromedriver.exe included in project is ChromeDriver version 123.0.6312.122. For the latest version see [Chrome for Testing availability](https://googlechromelabs.github.io/chrome-for-testing/). For older versions see [Older Releases](https://chromedriver.chromium.org/downloads).
+
+## Future/WIP
+With more time we can:
+  - Specify NPM commands/scripts and other CLI tools to run tests automatically, parse SCSS, and lint code
+  - Implement pagination
+  - Provide further filtering

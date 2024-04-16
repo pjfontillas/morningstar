@@ -22,19 +22,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.google-symbol:hover {
-  background-color: #E9EFFF;
-  cursor: pointer;
-}
-
 html {
   background-color: #324C8D;
   font-family: "Roboto", sans-serif;
 }
 
 #root {
-  display: flex;
-  align-items: center;
-  height: 90vh;
+  padding-top: 100px;
 }
 
