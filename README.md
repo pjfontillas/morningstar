@@ -13,11 +13,11 @@ The Back End API to use by the front end:
   - Details for running the API can be found in the repo README
 
 ### Font
-Roboto font (can be linked externally, I prefer to include it locally)
+Roboto font
 
 ### Material Icons by Google
-  - [Search](https://fonts.google.com/icons?icon.query=search) (downloaded variable version to allow for changes and included locally)
-  - [Close](https://fonts.google.com/icons?icon.query=close) (downloaded variable version to allow for changes and included locally)
+  - [Search](https://fonts.google.com/icons?icon.query=search)
+  - [Close](https://fonts.google.com/icons?icon.query=close)
 
 ### Colors
   - Primary Text Color `#000000`
@@ -83,4 +83,4 @@ chromedriver.exe (or just chromedriver for mac/linux) that matches your Chrome b
 With more time we can:
   - Specify NPM commands/scripts and other CLI tools to run tests automatically, parse SCSS, and lint code
   - Implement pagination
-  - Provide further filtering
+  - Provide further filtering or sorting of data
