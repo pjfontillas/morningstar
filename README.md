@@ -77,7 +77,7 @@ This exercise is a simple `index.html` file that you can click to open as a loca
 
 ## Testing
 Selenium, Mocha, and Chai are used to test this module. Run `mocha ./lib/Search/test.js` while in the project directory for the test specific to this module.
-chromedriver.exe that matches your Chrome build version should be either in your path or project directory. chromedriver.exe included in project is ChromeDriver version 123.0.6312.122. For the latest version see [Chrome for Testing availability](https://googlechromelabs.github.io/chrome-for-testing/). For older versions see [Older Releases](https://chromedriver.chromium.org/downloads).
+chromedriver.exe (or just chromedriver for mac/linux) that matches your Chrome build version should be either in your path or project directory. chromedriver included in project is ChromeDriver version 123.0.6312.122. For the latest version see [Chrome for Testing availability](https://googlechromelabs.github.io/chrome-for-testing/). For older versions see [Older Releases](https://chromedriver.chromium.org/downloads).
 
 ## Future/WIP
 With more time we can:
