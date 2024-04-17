@@ -76,7 +76,8 @@ Even though in this exercise we control the API, we should still clean response 
 This exercise is a simple `index.html` file that you can click to open as a local file or serve via HTTPS any way you want. I prefer using `npx http-server -S -C cert.pem -o`, but you will need to generate your own `cert.pem` and `key.pem`. See [StackOverflow](https://stackoverflow.com/questions/12871565/how-to-create-pem-files-for-https-web-server) for examples.
 
 ## Testing
-Selenium, Mocha, and Chai are used to test this module. Run `mocha ./lib/Search/test.js` while in the project directory for the test specific to this module.
+Selenium, Mocha, and Chai are used to test this module. Run `mocha ./lib/Search/test.js` while in the project directory for the test specific to this module. Alternatively, we can run `mocha --recursive ./lib/**/test.js` to find all tests matching the module composition.
+
 chromedriver.exe (or just chromedriver for mac/linux) that matches your Chrome build version should be either in your path or project directory. chromedriver included in project is ChromeDriver version 123.0.6312.122. For the latest version see [Chrome for Testing availability](https://googlechromelabs.github.io/chrome-for-testing/). For older versions see [Older Releases](https://chromedriver.chromium.org/downloads).
 
 ## Future/WIP
