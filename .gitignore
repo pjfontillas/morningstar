@@ -131,3 +131,5 @@ dist
 
 # keys
 *.pem
+
+.DS_Store
