@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 992px) {
   .search {
     width: 35%;
   }
@@ -50,6 +50,16 @@
   color: #5E5E5E;
 }
 
+.search .input-group .append button {
+  border: 0;
+  visibility: hidden;
+}
+
+.search .input-group .append button:focus {
+  outline: none;
+  background-color: #e9efff;
+}
+
 .search input {
   padding: 10px;
   width: 100%;
@@ -77,6 +87,7 @@
 .search .results .data {
   max-height: 50vh;
   overflow: auto;
+  white-space: nowrap;
 }
 
 .search .results .row {
@@ -94,13 +105,18 @@
 }
 
 .search .results .row .col .match {
-  font-weight: 700;
+  font-family: 'Roboto_Bold';
 }
 
 .search .results .header.row {
   font-weight: 600;
   color: #5E5E5E;
   font-size: 0.9em;
+}
+
+.search .results .data .col {
+  white-space: normal;
+  padding-right: 20px;
 }
 
 .search .results .data .name.col {
