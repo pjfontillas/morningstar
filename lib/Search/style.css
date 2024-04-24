@@ -19,6 +19,10 @@
   user-select: none;
 }
 
+.close.google-symbol {
+  background-color: transparent;
+}
+
 .close.google-symbol:hover {
   background-color: #E9EFFF;
   cursor: pointer;
